@@ -1,5 +1,5 @@
 $(function () {
-  console.log("hello there world")
+  // console.log("hello there world")
 
   function myfocus (that) {
     $(this).val('');
