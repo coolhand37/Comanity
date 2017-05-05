@@ -1,0 +1,405 @@
+/*********************************************
+	Inherited Styles
+**********************************************/
+
+html {
+    box-sizing: border-box;
+    color: #444;
+    font-size: 12pt;
+    font-family: 'Open Sans', sans-serif, Arial;
+    font-weight: 300;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    color: inherit;
+    font: inherit;
+}
+
+
+/*********************************************
+	Defaults
+**********************************************/
+body {
+    font-size: 15px;
+    margin: 0px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5 {
+    /*margin: 0;   */
+}
+
+h1 {
+    font-size: 2.2em
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fffef2;
+}
+
+img {
+    border: none;
+}
+
+i {
+    padding-right: 5px;
+}
+
+
+/*********************************************
+	Helpers
+**********************************************/
+
+/*********************************************
+    Layout
+**********************************************/
+
+body {
+    background-color: #fffef2;
+}
+
+.panel {
+    height: 1000px;
+}
+
+.main-header {
+    height: 75px;
+    background-color: #fffef2;
+    width: 100%;
+    box-shadow: 0 0 15px -2px #828080;
+    z-index: 10;
+}
+
+.main-header > div {
+    position: relative;
+    background-color: green;
+}
+
+.logo {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    /*background-color: red;*/
+}
+
+.collapsed-navbar {
+    position: absolute;
+    top: 75px;
+    width: 100%;
+    display: none;
+    text-align: center;
+    z-index: 9;
+    display: none;
+}
+
+.collapsed-navbar a {
+    background-color: #4cb8c5;
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+
+}
+
+.collapsed-navbar a:hover {
+    background-color: #398d96;
+}
+
+.main-navbar {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    width: auto;
+}
+
+.main-navbar a {
+    color:  #4cb8c5;
+    display: inline;
+    font-size: .9em;
+    text-decoration: none;
+    padding: 15px;
+
+}
+
+.main-navbar a:hover {
+    color: #015b25;
+}
+
+.hero {
+    height: 350px;
+    /*background-color: blue;*/
+    background-image: url(images/cowork.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    /*position: relative;*/
+}
+
+.main-content {
+/*    padding: 15px;*/
+    text-align: center;
+}
+
+.secondary-content {
+    background-color: #fcf7e3;
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+
+
+/*********************************************
+    Components
+**********************************************/
+
+
+/*******Header********/
+
+.collapsed-menu {
+    background-color: #4cb8c5;
+    height: 35px;
+    width: 45px;
+    border-radius: 5px;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+.collapsed-menu:hover {
+    cursor: pointer;
+    background-color: #398d96;
+}
+
+.menu-line-container {
+    padding: 2px;
+}
+
+.menu-line-container div {
+    width: 60%;
+    height: 3px;
+    border: none;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 5px;
+    border-radius: 20px;
+}
+
+.menu-line-container div:first-child {
+    margin-top: 5px;
+
+}
+
+
+/********Hero Content*********/
+
+.hero > div {
+    position: absolute;
+    top: 125px;
+    right: 0;
+    left: 0;
+    color: #fffef2;
+    /*background-color: yellow;*/
+}
+
+.hero h1 {
+    font-size: 3em;
+    /*background-color: green;*/
+
+}
+
+.hero span {
+    /*background-color: red;*/
+    border-radius: 30px;
+    padding: 5px 10px;
+    background-image: url("images/darkbcg.png");
+
+}
+
+.hero button {
+    background-color: #fffef2;
+    color: #4cb8c5;
+    font-size: 1.7em;
+}
+
+
+/********Main Content**********/
+
+.main-content form {
+    border: 1px solid #ece9d9;
+    margin: auto;
+    margin-top: -125px;
+    background-color: #fffef2;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.contact-form {
+    padding: 0;
+}
+
+.form-header {
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+}
+
+form .input {
+    padding-bottom: 10px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+}
+
+.submit {
+    text-align: center;
+}
+
+.submit span {
+    color: #4cb8c5;
+}
+
+form button {
+    background-color: #4cb8c5;
+    width: 100%;
+}
+
+
+.main-content form h1 {
+    margin-bottom: 0;
+}
+
+.about-us {
+    padding: 10px 20px;
+    /*text-align: left;*/
+}
+
+.about-us button {
+    background-color: #4cb8c5;
+}
+
+/*******Secondary Content********/
+
+
+.membership-tiles {
+    max-width: 370px;
+    padding: 15px 10px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.coming-soon-dark {
+    background-image: url("images/darkbcg.png");
+}
+
+.member-option-images {
+    max-width: 100%;
+}
+
+/*******Tertiary Content********/
+
+
+/*******Disclaimer Content********/
+
+
+
+/*******Footer********/
+
+footer {
+    background-color: #4cb8c5;
+    color: #fffef2;
+    text-align: center;
+}
+
+.footer-contact-info {
+    padding: 10px 0;
+}
+
+.footer-contact-info > div {
+    display: inline-block;
+    padding: 15px;
+}
+
+/***********************************************
+                Media Points
+************************************************/
+@media (max-width: 400px) {
+
+}
+
+
+@media (min-width: 480px) {
+
+
+}
+
+@media (min-width: 660px) {
+
+    .main-navbar {
+        display: initial;
+    }
+
+    .collapsed-menu {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 4em;
+    }
+
+    .main-content form {
+        width: 70%;
+    }
+
+}
+
+@media (min-width: 760px) {
+
+.main-header > div, .hero > div, .main-content > div, .secondary-content > div, footer > div {
+    width: 760px;
+    margin: auto;
+}
+
+.membership-tiles {
+    width: 32%;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 450px;
+}
+
+}
+
+@media (min-width: 930px) {
+
+.main-header > div, .hero > div, .main-content > div, .secondary-content > div, footer > div {
+    width: 930px;
+    margin: auto;
+}
+
+}
+
+@media (min-width: 1170px) {
+
+}
