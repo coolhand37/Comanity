@@ -9,6 +9,7 @@ var rimraf = require('rimraf');
 // var apiServer = jsonServer.create();
 // var router = jsonServer.router('db.json');
 var serve = require('gulp-serve');
+var ghPages = require('gulp-gh-pages');
 
 
 /****************************************
@@ -31,6 +32,11 @@ gulp.task('build', ['clean'], function () {
     .on('error', gutil.log.bind(gutil, 'Browserify Error'))
     .pipe(source('bundle.js'))
     .pipe(gulp.dest('build'));
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });
 
 
