@@ -19,9 +19,12 @@ $(function () {
     $(".collapsed-navbar").slideToggle();
   });
 
-  $(".collapsed-navbar").click(function(){
-    $(".collapsed-navbar").slideToggle();
+  $(".hero-button").click(function(){
+    $(".contact-form").toggle();
   });
+  $(".close-contact-form").click(function(){
+    $(".contact-form").toggle();
+  })
 
 
 });
