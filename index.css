@@ -156,10 +156,16 @@ body {
 .main-content {
 /*    padding: 15px;*/
     text-align: center;
-    background-color: #dee7e8;
+    /*background-color: #dee7e8;*/
+    /*background-color: #e6eced;*/
+    background-color: white;
 }
 
 .secondary-content {
+    background-color: red;
+}
+
+.tieritary-content {
     background-color: #fff;
     text-align: center;
     padding: 15px;
@@ -330,6 +336,35 @@ form button {
 
 /*******Secondary Content********/
 
+.coworking-tiles {
+    background-color: blue;
+}
+
+.coworking-tiles > div {
+    padding: 35px;
+}
+
+.coworking-tiles h2 {
+    margin-top: 0;
+}
+
+.what-coworking {
+    background-color: #232323;
+    color: white;
+}
+
+.why-different {
+    background-color: #4cb8c5;
+    /*background-color: #9b9b9b;*/
+    color: white;
+}
+
+.not-about-money {
+    background-color: #dee7e8;
+}
+
+/*******Tieritary Content********/
+
 
 .membership-tiles {
     max-width: 370px;
@@ -418,10 +453,11 @@ footer {
 
 @media (min-width: 760px) {
 
-.main-header > div, .hero > div, .main-content > div, .secondary-content > div, footer > div {
+.main-header > div, .hero > div, .main-content > div, /*.secondary-content > div,*/ .tieritary-content > div, footer > div {
     width: 760px;
     margin: auto;
 }
+
 
 .membership-tiles {
     width: 32%;
@@ -440,11 +476,35 @@ footer {
 
 @media (min-width: 930px) {
 
-.main-header > div, .hero > div, .main-content > div, .secondary-content > div, footer > div {
+.main-header > div, .hero > div, .main-content > div, /*.secondary-content > div,*/ .tieritary-content > div, footer > div {
     width: 930px;
     margin: auto;
 }
 
+.coworking-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.coworking-tiles > div {
+    display: inline-block;
+    width: 50%;
+    flex-grow: 1;
+}
+
+.what-coworking {
+/*    order: 2;*/
+}
+
+.why-different {
+    /*order: 1;*/
+}
+
+.not-about-money {
+    /*order: 3;*/
+    text-align: center;
+}
 }
 
 @media (min-width: 1170px) {
