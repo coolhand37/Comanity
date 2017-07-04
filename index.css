@@ -162,7 +162,7 @@ body {
 }
 
 .secondary-content {
-    background-color: red;
+    /*background-color: red;*/
 }
 
 .tieritary-content {
@@ -337,11 +337,11 @@ form button {
 /*******Secondary Content********/
 
 .coworking-tiles {
-    background-color: blue;
+    /*background-color: blue;*/
 }
 
 .coworking-tiles > div {
-    padding: 35px;
+    padding: 30px;
 }
 
 .coworking-tiles h2 {
@@ -453,58 +453,63 @@ footer {
 
 @media (min-width: 760px) {
 
-.main-header > div, .hero > div, .main-content > div, /*.secondary-content > div,*/ .tieritary-content > div, footer > div {
-    width: 760px;
-    margin: auto;
-}
+    .main-header > div, .hero > div, .main-content > div, /*.secondary-content > div,*/ .tieritary-content > div, footer > div {
+        width: 760px;
+        margin: auto;
+    }
 
 
-.membership-tiles {
-    width: 32%;
-    display: inline-block;
-    vertical-align: top;
-    padding-right: 10px;
-    padding-left: 10px;
-    height: 450px;
-}
+    .membership-tiles {
+        width: 32%;
+        display: inline-block;
+        vertical-align: top;
+        padding-right: 10px;
+        padding-left: 10px;
+        height: 450px;
+    }
 
-.contact-form {
-    width: 600px;
-}
+    .contact-form {
+        width: 600px;
+    }
 
 }
 
 @media (min-width: 930px) {
 
-.main-header > div, .hero > div, .main-content > div, /*.secondary-content > div,*/ .tieritary-content > div, footer > div {
-    width: 930px;
-    margin: auto;
-}
+    .main-header > div, .hero > div, .main-content > div, /*.secondary-content > div,*/ .tieritary-content > div, footer > div {
+        width: 930px;
+        margin: auto;
+    }
 
-.coworking-tiles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+    .coworking-tiles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-.coworking-tiles > div {
-    display: inline-block;
-    width: 50%;
-    flex-grow: 1;
-}
+    .coworking-tiles > div {
+        display: inline-block;
+        width: 50%;
+        flex-grow: 1;
+    }
 
-.what-coworking {
-/*    order: 2;*/
-}
+    .coworking-tiles > div.what-coworking {
+    /*    order: 2;*/
+        padding-left: 8%;
 
-.why-different {
-    /*order: 1;*/
-}
+    }
 
-.not-about-money {
-    /*order: 3;*/
-    text-align: center;
-}
+    .coworking-tiles > div.why-different {
+        /*order: 1;*/
+        padding-right: 8%;
+    }
+
+    .coworking-tiles > div.not-about-money {
+        /*order: 3;*/
+        padding-left: 8%;
+        padding-right: 8%;
+        text-align: center;
+    }
 }
 
 @media (min-width: 1170px) {
