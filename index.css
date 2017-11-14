@@ -161,12 +161,12 @@ body {
     background-color: white;
 }
 
-.secondary-content {
+.about-us {
     /*background-color: red;*/
 }
 
-.tieritary-content {
-    background-color: #fff;
+.memberships {
+    background-color: #dee7e8;
     text-align: center;
     padding: 15px;
 }
@@ -319,22 +319,22 @@ form button {
 /********Main Content**********/
 
 
-.about-us {
+.mission {
     padding: 10px 20px;
     /*text-align: left;*/
 }
 
-.about-us h3 {
+.mission h3 {
     font-size: 1.3em;
     font-style: italic;
     font-weight: normal;
 }
 
-.about-us button {
+.mission button {
     background-color: #4cb8c5;
 }
 
-/*******Secondary Content********/
+/*******About Us********/
 
 .coworking-tiles {
     /*background-color: blue;*/
@@ -360,7 +360,7 @@ form button {
 }
 
 .not-about-money {
-    background-color: #dee7e8;
+    background-color: #fff;
 }
 
 /*******Tieritary Content********/
@@ -381,9 +381,9 @@ form button {
     margin-bottom: 0;
 }
 
-.coming-soon-dark {
+/*.coming-soon-dark {
     background-image: url("images/darkbcg.png");
-}
+}*/
 
 .member-option-images {
     max-width: 100%;
@@ -456,7 +456,7 @@ footer {
 
 @media (min-width: 760px) {
 
-    .main-header > div, .hero > div, .main-content > div, /*.secondary-content > div,*/ .tieritary-content > div, footer > div {
+    .main-header > div, .hero > div, .main-content > div, /*.about-us > div,*/ .memberships > div, footer > div {
         width: 760px;
         margin: auto;
     }
@@ -479,7 +479,7 @@ footer {
 
 @media (min-width: 930px) {
 
-    .main-header > div, .hero > div, .main-content > div, /*.secondary-content > div,*/ .tieritary-content > div, footer > div {
+    .main-header > div, .hero > div, .main-content > div, /*.about-us > div,*/ .memberships > div, footer > div {
         width: 930px;
         margin: auto;
     }
