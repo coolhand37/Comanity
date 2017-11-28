@@ -99,6 +99,11 @@ body {
     /*background-color: red;*/
 }
 
+.logo img {
+    height: 54px;
+    width: 185px;
+}
+
 .collapsed-navbar {
     position: absolute;
     top: 75px;
@@ -257,64 +262,6 @@ body {
     font-size: 1.7em;
 }
 
-/********Form Panel**********/
-
-.contact-form {
-    border: 1px solid #ece9d9;
-    position: absolute;
-    top: 100px;
-    background-color: #fcfcfc;
-    text-align: left;
-    padding: 10px 20px;
-    font-size: .8em;
-    margin: 0 10px;
-}
-
-.close-contact-form {
-    position: absolute;
-    top: 10px;
-    right:  10px;
-    font-size: 1.2em;
-    cursor: pointer;
-    padding: 15px;
-}
-
-/*.contact-form {
-    padding: 0;
-}*/
-
-.form-header {
-    border-bottom: 3px solid black;
-    padding-bottom: 10px;
-}
-
-form .input {
-    padding-bottom: 10px;
-}
-
-form input {
-    width: 100%;
-    padding: 10px;
-}
-
-.submit {
-    text-align: center;
-}
-
-.submit span {
-    color: #4cb8c5;
-}
-
-form button {
-    background-color: #4cb8c5;
-    width: 100%;
-}
-
-
-.form-panel form h1 {
-    margin-bottom: 0;
-}
-
 
 /********Main Content**********/
 
@@ -324,10 +271,15 @@ form button {
     /*text-align: left;*/
 }
 
+.mission h1 {
+    margin-bottom: 0;
+}
+
 .mission h3 {
     font-size: 1.3em;
     font-style: italic;
     font-weight: normal;
+    margin-top: 0;
 }
 
 .mission button {
@@ -363,7 +315,7 @@ form button {
     background-color: #fff;
 }
 
-/*******Tieritary Content********/
+/*******Memberships Content********/
 
 
 .membership-tiles {
@@ -381,15 +333,20 @@ form button {
     margin-bottom: 0;
 }
 
-/*.coming-soon-dark {
-    background-image: url("images/darkbcg.png");
-}*/
-
 .member-option-images {
     max-width: 100%;
 }
 
-/*******Tertiary Content********/
+div.membership-button {
+    padding: 0;
+}
+
+.membership-button button {
+    background-color: #4cb8c5;
+
+}
+
+/*******   ********/
 
 
 /*******Disclaimer Content********/
@@ -411,6 +368,49 @@ footer {
 .footer-contact-info > div {
     display: inline-block;
     padding: 15px;
+}
+
+.contact-form {
+    text-align: left;
+    padding: 10px 20px;
+    font-size: .8em;
+    margin: 0 10px;
+}
+
+.form-header-content {
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
+}
+
+form .input {
+    padding-bottom: 10px;
+}
+
+form input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: black;
+}
+
+form textarea {
+    height: 100px;
+    margin-top: 10px;
+}
+
+.submit {
+    text-align: center;
+}
+
+form button {
+    background-color: white;
+    width: 100%;
+    color: #4cb8c5;
+}
+
+
+.form-panel form h1 {
+    margin-bottom: 0;
 }
 
 /***********************************************
@@ -443,13 +443,27 @@ footer {
         font-size: 4em;
     }
 
-    .contact-form {
-        width: 500px;
-        margin: auto;
-        left: 0;
-        right: 0;
-        top: 150px;
+    .footer-contact-info .contact-form {
         font-size: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .contact-form .form-header {
+        flex-basis: 35%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .contact-form form {
+        flex-basis: 60%;
+        display: inline-block;
+    }
+
+    .form-header h1 {
+        margin: 0;
     }
 
 }
@@ -468,11 +482,10 @@ footer {
         vertical-align: top;
         padding-right: 10px;
         padding-left: 10px;
-        height: 450px;
     }
 
-    .contact-form {
-        width: 600px;
+    .membership-tile-content {
+        height: 430px;
     }
 
 }
@@ -516,7 +529,10 @@ footer {
 }
 
 @media (min-width: 1170px) {
-
+    .main-header > div, .hero > div, .main-content > div, /*.about-us > div,*/ .memberships > div, footer > div {
+        width: 1170px;
+        margin: auto;
+    }
 }
 
 .hidden {

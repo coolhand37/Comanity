@@ -19,12 +19,15 @@ $(function () {
     $(".collapsed-navbar").slideToggle();
   });
 
-  $(".hero-button").click(function(){
-    $(".contact-form").toggle();
-  });
-  $(".close-contact-form").click(function(){
-    $(".contact-form").toggle();
-  })
+  // $(".hero-button").click(function(){
+  //   $(".contact-form").toggle();
+  // });
+  // $(".membership-button").click(function(){
+  //   $(".contact-form").toggle();
+  // });
+  // $(".close-contact-form").click(function(){
+  //   $(".contact-form").toggle();
+  // })
 
 
 });
