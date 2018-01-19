@@ -89,7 +89,6 @@ body {
 
 .main-header > div {
     position: relative;
-    background-color: green;
 }
 
 .logo {
@@ -412,6 +411,99 @@ form button {
 .form-panel form h1 {
     margin-bottom: 0;
 }
+
+
+/*******Landingpage1********/
+
+/*******Landingpage1 hero********/
+
+.body-lander1 {
+    background-color: orange;
+}
+
+.lander1-main-header {
+    text-align: center;
+    background-color: red;
+    position: fixed;
+    width: 100%;
+}
+
+.lander1-logo {
+    background-color: blue;
+    padding: 10px;
+}
+
+.lander1-logo img {
+    width: 185px;
+    height: 54px;
+}
+
+.lander1-header-phone {
+    font-size: 1.7em;
+    background-color: black;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.lander1-header-phone i {
+   padding-right: 10px;
+}
+
+.main-lander1 {
+    background-color: yellow;
+}
+
+.hero-lander1 {
+    /*height: 500px;*/
+    background-color: green;
+/*    background-image: url(images/cowork.jpg);*/
+    padding: 0 20px;
+}
+
+.hero-lander1-content {
+    background-color: red;
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+
+
+.hero-lander1 h2 {
+    font-size: 1.5em;
+}
+
+.lander-form {
+    background-color: grey;
+}
+
+.lander1-form-header-content {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.underline {
+    border-bottom: 3px solid white;
+
+}
+
+.lander-form form {
+    padding-top: 15px;
+}
+
+.lander-form form textarea {
+    height: 50px;
+}
+
+/*******Landingpage1 why-us********/
+
+.why-us-lander1 {
+    height: 500px;
+    background-color: yellow;
+}
+
+.footer-lander1 {
+    padding: 20px 10px;
+}
+
 
 /***********************************************
                 Media Points
