@@ -399,6 +399,7 @@ form textarea {
 
 .submit {
     text-align: center;
+    padding-bottom: 20px;
 }
 
 form button {
@@ -410,6 +411,12 @@ form button {
 
 .form-panel form h1 {
     margin-bottom: 0;
+}
+
+.addresses {
+    padding-right: 20px;
+    padding-bottom: 5px;
+    display: inline-block;
 }
 
 
