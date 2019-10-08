@@ -303,20 +303,27 @@ body {
     margin-top: 0;
 }
 
-.what-coworking, .coworking {
+.what-coworking {
     background-color: #232323;
     color: white;
 }
 
-/*.why-different {
+.why-different {
     background-color: #4cb8c5;
-    /*background-color: #9b9b9b;
+    background-color: #9b9b9b;
     color: white;
-}*/
+}
 
-.not-about-money, .why-different {
+.not-about-money {
     background-color: #fff;
 }
+
+.coworking {
+    background-color: #3e5356;
+    color: white;
+}
+
+
 
 /*******Memberships Content********/
 
